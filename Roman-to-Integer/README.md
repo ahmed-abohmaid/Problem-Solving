@@ -19,19 +19,19 @@ The seven symbols used in Roman numerals are I, V, X, L, C, D and M. Each symbol
 ## Usage
 Roman numerals are typically written from left to right, largest to smallest. For example, the number 27 would be written as XXVII (10 + 10 + 5 + 1 + 1). The number 4 is not written as IIII; instead it is written as IV (5 - 1). This subtraction principle applies to numbers 9 (IX), 40 (XL), 90 (XC), 400 (CD) and 900 (CM).
 
-####Example 1:
+###Example 1:
 
 `Input: s = "III"
 Output: 3
 Explanation: III = 3.`
 
-####Example 2:
+###Example 2:
 
 `Input: s = "LVIII"
 Output: 58
 Explanation: L = 50, V= 5, III = 3.`
 
-####Example 3:
+###Example 3:
 
 `Input: s = "MCMXCIV"
 Output: 1994
