@@ -2,19 +2,18 @@
 ## Problem Statement <br>
 Write a function findLongestWordLength(str) that takes a string as input and returns the length of the longest word in the string.
 
-Example
+### Example
 ```js
 findLongestWordLength('The quick brown fox jumped over the lazy dog'); // 6
 ```
 
-Solutions <br>
+### Solutions <br>
 Two possible solutions are presented below:
 <br>
 
-Solution 1
----
+<hr>
+Solution 1 <br>
 This solution uses a loop to iterate through each character of the string. It keeps track of the length of each word encountered and stores it in an array. The function then returns the maximum value in the array.
----
 
 ```js
 function findLongestWordLength1(str) {
@@ -35,10 +34,10 @@ function findLongestWordLength1(str) {
 }
 ```
 
+<hr>
 Solution 2
----
+<br>
 This solution splits the string into an array of words using the split() method. It then iterates through each word in the array and stores the length of the longest word encountered in a variable. The function returns the value of the variable.
----
 
 ```js
 Copy code
@@ -55,13 +54,13 @@ function findLongestWordLength2(str) {
   return maxLength;
 }
 ```
-
+<hr>
 Both solutions produce the same result. You can use either of these solutions based on your preference.
 
-Testing
-Both solutions have been tested with various inputs and verified for correctness.
+### Testing <br>
+Both solutions have been tested with various inputs and verified for correctness. <br>
 
-You can also test the function using the findLongestWordLength1() and findLongestWordLength2() functions provided in the code above.
+You can also test the function using the findLongestWordLength1() and findLongestWordLength2() functions provided in the code above. <br>
 
-Conclusion
+### Conclusion <br>
 This problem demonstrates how to find the length of the longest word in a given string.
