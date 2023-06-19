@@ -1,4 +1,4 @@
-# Truncate a String
+# Mutaions
 
 ## Problem Statement <br>
 Given an array with two strings, return true if the string in the first element of the array contains all of the letters of the string in the second element of the array (ignoring case), and false otherwise.
@@ -35,15 +35,6 @@ function containsAllLetters(arr) {
 ### Testing <br>
 
 The solution has been tested with the provided examples and additional test cases to ensure its correctness.
-
-```js
-console.log(containsAllLetters(["hello", "Hello"])); // true
-console.log(containsAllLetters(["hello", "hey"])); // false
-console.log(containsAllLetters(["Alien", "line"])); // true
-console.log(containsAllLetters(["Alien", "Line"])); // true (ignores case)
-console.log(containsAllLetters(["Alien", "Lion"])); // false
-console.log(containsAllLetters(["Hello", "hello"])); // true (ignores case)
-```
 
 ### Conclusion <br>
 

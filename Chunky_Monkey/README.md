@@ -1,4 +1,4 @@
-# Truncate a String
+# Chunky Monkey
 
 ## Problem Statement <br>
 Write a function that takes an array (arr) and a number (size) as arguments. The function should split the array into groups of the specified size and return them as a two-dimensional array.

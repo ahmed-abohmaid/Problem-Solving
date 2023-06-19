@@ -1,4 +1,4 @@
-# Title Case a Sentence
+# Sum All In Range
 
 ## Problem Statement <br>
 
