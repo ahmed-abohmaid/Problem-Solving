@@ -21,7 +21,24 @@ uniteUnique([1, 3, 2, 3], [5, 2, 1, 4], [2, 1]); // [1, 3, 2, 5, 4]
 ### Solutions <br>
 
 <hr>
-The solution to this problem involves concatenating all the arrays into a single array and then filtering out the duplicate values. To maintain the original order, a set can be used to track the unique values encountered so far. By iterating over the concatenated array and adding each unique value to the set, we can ensure that only unique values are stored.
+The uniteUnique function takes multiple arrays as arguments and returns a new array that contains all unique values from the input arrays in the order they appear. The function follows these steps to solve the problem:
+<br>
+
+1. The uniteUnique function takes multiple arrays as arguments and returns a new array that contains all unique values from the input arrays in the order they appear. The function follows these steps to solve the problem:
+
+2. Create an empty array newArr to store all values from the input arrays.
+
+3. Create an empty array reqArr to store the unique values in the desired order.
+
+4. Use the map method to iterate over each array in the input arguments.
+
+5. Within the map callback, use the spread operator ... to push all elements from the current array into newArr.
+
+6. Use the map method again to iterate over each number num in newArr.
+
+7. Check if reqArr does not already include the current number num using the includes method.
+
+8. If num is not already present in reqArr, push it into reqArr.
 
 <br>
 Here's the JavaScript code for the solution:
@@ -44,4 +61,4 @@ function uniteUnique(...arr) {
 
 ### Conclusion <br>
 
-This problem demonstrates a straightforward approach to concatenate arrays, remove duplicate values, and maintain the original order of the elements. By utilizing the flat method to concatenate arrays and a Set to track unique values, we can efficiently solve the problem. The solution showcases the use of array methods and sets to accomplish the task effectively.
+The uniteUnique function takes multiple arrays as input and returns a new array that contains all unique values in the order they appear. By using a combination of array manipulation methods, we can efficiently solve the problem and obtain the desired result.
