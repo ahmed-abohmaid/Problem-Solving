@@ -22,7 +22,7 @@ function uniteUnique(...arr) {
 }
 ```
 
-### Example
+### Examples
 
 ```js
 convertHTML('Dolce & Gabbana'); // Dolce &amp; Gabbana.
