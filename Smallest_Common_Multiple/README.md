@@ -47,4 +47,4 @@ smallestCommons([23, 18]); // 6056820.
 
 #### Resource
 
-[https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/](freeCodeCamp)
+[freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
