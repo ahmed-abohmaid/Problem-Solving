@@ -82,4 +82,4 @@ dropElements2([1, 2, 3, 7, 4], function (n) {
 
 ### Resource
 
-[https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/](freeCodeCamp)
+[freeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
