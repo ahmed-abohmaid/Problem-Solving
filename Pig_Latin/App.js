@@ -6,7 +6,7 @@ function translatePigLatin(str) {
 
   if (!vowel.includes(lowerCaseStr[0])) {
     let i = 0;
-    while (!vowel.includes(lowerCaseStr[i])) {
+    while (!vowel.includes(lowerCaseStr[i]) && i < str.length) {
       clusterStr += lowerCaseStr[i];
       i++;
     }
@@ -19,4 +19,5 @@ function translatePigLatin(str) {
   return newStr;
 }
 
-translatePigLatin('constant'); // onstantcay
+translatePigLatin("california")
+translatePigLatin('rhythm'); // rhythmay
