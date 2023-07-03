@@ -13,12 +13,47 @@ For example, swapping at indices `0` and `2` in `"abcd"` results in `"cbad"`.
 
 ```js
 var buddyStrings = function (s, goal) {
-  let testText = '';
-  for (let i = s.length - 1; i >= 0; i--) {
-    testText += s[i];
+  if (s.length !== goal.length) {
+    return false;
   }
 
-  if (testText === goal) return true;
+  if (s === goal) {
+    if (s.length < 3) {
+      const checkString = s[1] + s[0];
+      if (checkString === goal) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    const charCount = {};
+    for (let i = 0; i < s.length; i++) {
+      if (charCount[s[i]] === true) {
+        // console.log(charCount);
+        return true;
+      }
+      charCount[s[i]] = true;
+    }
+    // console.log(charCount);
+    return false;
+  }
+
+  let mismatches = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== goal[i]) {
+      mismatches.push([s[i], goal[i]]);
+    }
+  }
+  // console.log(mismatches);
+
+  if (
+    mismatches.length === 2 &&
+    mismatches[0][0] === mismatches[1][1] &&
+    mismatches[0][1] === mismatches[1][0]
+  ) {
+    return true;
+  }
 
   return false;
 };
